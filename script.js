@@ -10,9 +10,9 @@ const getSum = () => {
         sum+=Number(price.textContent);
     })
     let tr=document.createElement("tr");
-
-tr.innerHTML=`<td class="item">Total sum</td><td class="price">${sum}</td>`;
-document.querySelector("table").appendChild(tr);
+   tr.setAttribute(id , ans);
+   tr.innerHTML=`<td class="item">Total sum</td><td class="price">${sum}</td>`;
+   document.querySelector("table").appendChild(tr);
 };
 
 getSumBtn.addEventListener("click", getSum);
