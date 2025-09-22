@@ -9,10 +9,14 @@ const getSum = () => {
     prices.forEach((price)=>{
         sum+=Number(price.textContent);
     })
+	let table=document.querySelector("table");
     let tr=document.createElement("tr");
-   tr.setAttribute(id , ans);
-   tr.innerHTML=`<td class="item">Total sum</td><td class="price">${sum}</td>`;
-   document.querySelector("table").appendChild(tr);
+	tr.classList.add("total-row");
+    
+	let td=document.createElement("td");
+	td.id="ans";
+	tr.appenChild(td);
+	table.appenChild(tr);
 };
 
 getSumBtn.addEventListener("click", getSum);
