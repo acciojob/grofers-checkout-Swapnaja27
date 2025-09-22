@@ -15,8 +15,8 @@ const getSum = () => {
     
 	let td=document.createElement("td");
 	td.id="ans";
-	tr.appenChild(td);
-	table.appenChild(tr);
+	tr.appendChild(td);
+	table.appendChild(tr);
 };
 
 getSumBtn.addEventListener("click", getSum);
